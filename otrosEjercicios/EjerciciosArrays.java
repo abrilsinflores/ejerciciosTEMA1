@@ -2,7 +2,7 @@ package otrosEjercicios;
 
 import java.util.Arrays;
 
-public class OtrosEjers {
+public class EjerciciosArrays {
 
 	public static float devolverPromedio(float[] array) {
 		float promedio = 0;
@@ -31,7 +31,7 @@ public class OtrosEjers {
 	public static void main(String[] args) {
 		
 		float[] array = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-		float promedio = OtrosEjers.devolverPromedio(array);
+		float promedio = EjerciciosArrays.devolverPromedio(array);
 		System.out.println("el promedio de los nºs del 0 al 10 es: "+promedio);
 		
 		float[][] matrix = {
@@ -39,7 +39,7 @@ public class OtrosEjers {
 				{7f, 4f, 8f},
 				{9f, 2f, 1f}
 		};
-		float[] valoresMaxFila = OtrosEjers.matrizArray(matrix);
+		float[] valoresMaxFila = EjerciciosArrays.matrizArray(matrix);
 		System.out.println(Arrays.toString(valoresMaxFila));
 		
 			
