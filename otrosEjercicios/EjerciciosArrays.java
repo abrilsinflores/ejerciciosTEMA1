@@ -49,6 +49,23 @@ public class EjerciciosArrays {
 		}
 		System.out.println(Arrays.toString(array300));
 			
+		int[] arrayNuevo300 = new int[300];
+		char[] arrayChar = {'A', 'B', 'C', 'D', 'E', 'F'};
+		for(int i = 0, j = 0, k = 0; i<arrayNuevo300.length; i++) {
+			if(j<10) {
+				arrayNuevo300[i]=j;
+			}
+			if(j>=10 && j<15) {
+				arrayNuevo300[i]=arrayChar[k++];
+			}
+			j++;
+			if(k==5) {k=0;}
+			if(j==15) {j=0;}
+		}
+		System.out.println(Arrays.toString(arrayNuevo300));
+		//el código funciona bien, por pantalla se imprimen los números correspondientes
+		//a las letras A,B,C,D,E,F según el código ASCII (xq estamos aplicando el método
+		//toString a un array q tiene enteros y caracteres!!!
 	}
 
 }
