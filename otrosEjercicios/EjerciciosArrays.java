@@ -42,6 +42,12 @@ public class EjerciciosArrays {
 		float[] valoresMaxFila = EjerciciosArrays.matrizArray(matrix);
 		System.out.println(Arrays.toString(valoresMaxFila));
 		
+		int[] array300 = new int[300];
+		for(int i = 0, j = 0; i<array300.length; i++) {
+			array300[i]=j++;
+			if(j>=16) {j=0;}
+		}
+		System.out.println(Arrays.toString(array300));
 			
 	}
 
